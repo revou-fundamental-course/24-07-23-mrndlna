@@ -1,3 +1,7 @@
+//Dinamic view
+    let popUpName = prompt("Silahkan masukan nama kamu...");
+    document.getElementById("nnama").innerText = popUpName;
+
 //Auto slide gambar
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -24,6 +28,15 @@ setInterval(() => {
 }, 2000)
 
 //Mengisi Form Data Diri
-const formName = document.getElementById("fname").value;
-const Email = document.getElementById("femail").value;
-const submitButton = document. getElementById("submit").value;
+function validateForm() {
+    const formName = document.getElementById("fname").value;
+    const Email = document.getElementById("femail").value;
+    const interest = document.getElementById("finterest").value;
+
+    if (formName == "" || Email == "" ) {
+        alert("Mohon Isi Biodata Anda Agar Marketing Kami Dapat Menghubungi")
+        return false;
+    }
+}
+
+//

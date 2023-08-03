@@ -1,3 +1,39 @@
+/*RESPOSIVE WEB*/
+@media only screen and (max-width: 600px){
+    #headerNavigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    #navigation {
+        flex-direction: column;
+    }
+    #headerTitle {
+        flex-direction: column;
+        align-items: center;
+    }
+    #callUs {
+        flex-direction: column;
+        width: 100%;
+    }
+    #article {
+        width: 100%;
+    }
+    .slider {
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+    #titleDestination1{
+        flex-direction: column;
+    }
+    #titleDestination2{
+        flex-direction: column;
+    }
+
+    
+
+}
+
 /*HEADER SECTION STYLING*/
 
 #headerNavigation {
@@ -24,7 +60,7 @@
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
     background-color: #ff9e27;
-    color: #0E2954;
+    color: black;
 }
 
 /*BODY SECTION*/
@@ -56,7 +92,7 @@
 
 #callUs {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -68,12 +104,11 @@
     border-radius: 5px;
     background-color: white;
     color: black;
-    width: 60%;
 }
 
 .slider {
     display: block;
-    width: 100%;
+    width: 800px;
     height: 450px;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -111,6 +146,8 @@
     border: 2px solid rgb(87, 116, 93);
     border-radius: 5px;
 }
+
+/*PRICE INFORMATION*/
 
 #Information {
     display: flex;
