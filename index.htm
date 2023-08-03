@@ -26,8 +26,8 @@
 <!--TITLE SECTION-->
 
         <section id="headerTitle">
-            <h1>Miu Your Trusted Travel Agent's</h1>
-            <p id="subtitle"><i>Your Happiness Is Our Brithness</i></p>
+            <h1>Hi <span id="nnama"></span>, Miu is Your Trusted Travel Agent's</h1>
+            <p id="subtitle"><i>Yuk healing bersama MiuTravel.com, Your Happiness Is Our Happiness</i></p>
         </section>
     </header>
     <main  id="content">
@@ -36,11 +36,17 @@
 <!--ARTICLE SECTION-->
            
             <div id="article">
-                <img src="https://ik.imagekit.io/tvlk/blog/2020/03/wisata-pacitan-7-Pantainesia.jpg?tr=dpr-2,w-675" alt="pantai">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg/800px-Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg" alt="bromo">
-                <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1596025150/blog/qvoul9htpsgr7fnewqfi.webp" alt="baluran">
-                <img src="https://images.tokopedia.net/blog-tokopedia-com/uploads/2019/05/wisata-batu-12-Malang-Today.jpg" alt="alunalun">
-                <img src="https://i.pinimg.com/1200x/ce/65/37/ce65379c850b065c43e754a18cb23a61.jpg" alt="jawatan benculuk">
+                <div class="slideContainer">
+                    <img src="https://ik.imagekit.io/tvlk/blog/2020/03/wisata-pacitan-7-Pantainesia.jpg?tr=dpr-2,w-675" alt="pantai" class="slider">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg/800px-Mount_Bromo_at_sunrise%2C_showing_its_volcanoes_and_Mount_Semeru_%28background%29.jpg" alt="bromo" class="slider">
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_85/c_fill,w_1000/v1596025150/blog/qvoul9htpsgr7fnewqfi.webp" alt="baluran" class="slider">
+                    <img src="https://images.tokopedia.net/blog-tokopedia-com/uploads/2019/05/wisata-batu-12-Malang-Today.jpg" alt="alunalun" class="slider">
+                    <img src="https://i.pinimg.com/1200x/ce/65/37/ce65379c850b065c43e754a18cb23a61.jpg" alt="jawatan benculuk" class="slider">
+                    <div class="slideButton">
+                        <button onclick="plusDivs(-1)"> < Prev</button>
+                        <button onclick="plusDivs(1)">Next > </button>
+                    </div>
+                    </div>
                 <h4><i>"Liburan jadi menyenangkan bersama Miu Travel"</i></h4>
                 <table>
                     <tr>
@@ -62,9 +68,10 @@
                     <label for="nama">Your Name :</label><br>
                     <input class="isi" type="text" id="fname" name="nama"><br>
                     <label for="email">Email Address :</label><br>
-                    <input class="isi" type="text" id="email" name="email"><br>
+                    <input class="isi" type="text" id="femail" name="email"><br>
                     <label for="intrest">What are you interested in?</label><br>
                     <select class="isi" name="intrest" id="interest">
+                        <option value="pilihan">-Destination-</option>
                         <option value="surabaya">Surabaya</option>
                         <option value="malang">Malang</option>
                         <option value="lamongan">Lamongan</option>
@@ -74,7 +81,7 @@
                         <option value="madura">Madura</option>
                         <option value="pacitan">Pacitan</option>
                     </select><br>
-                    <input class="isi" type="submit" value="Submit">
+                    <input class="isi" type="submit" value="SUBMIT" id="submit">
                 </form>
             </div>
 
@@ -189,6 +196,7 @@
             <button>CALL TO ACTION</button>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 <!--FOOTER SECTION-->
